@@ -12,4 +12,8 @@ class ProjectsController < ApplicationController
     flash[:notice] = "Project has been created"
     redirect_to @project
   end
+  
+  def show
+    @project = Project.find(params[:id])
+  end
 end
