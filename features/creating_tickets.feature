@@ -20,3 +20,10 @@ Scenario: Creating a ticket without attributes fails
   Then I should see "Ticket has not been created."
   And I should see "Title can't be blank"
   And I should see "Description can't be blank"
+
+Scenario: Description must be longer than 10 characters
+  When I fill in "Title" with "Non-standards compliance"
+  And I fill in "Description" with "it sucks"
+  And I press "Create Ticket"
+  Then I should see "Ticket has not been created."
+  And I should see "Description cannot be blah blah"
