@@ -4,7 +4,7 @@ Feature: Editing Tickets
   I want a form to edit the tickets
 
   Background:
-    Given theere is a project called "TextMate 2"
+    Given there is a project called "TextMate 2"
     And that project has a ticket:
       | title           | description                   |
       | Make it shiny!  | Gradients! Starbursts! Oh My! |
