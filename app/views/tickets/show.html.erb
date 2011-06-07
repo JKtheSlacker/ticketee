@@ -1,4 +1,7 @@
 <div id='ticket'>
   <h2><%= @ticket.title %></h2>
+  <menu>
+    <%= link_to "Edit", [:edit, @project, @ticket] %>
+  </menu>
   <%= simple_format(@ticket.description) %>
 </div>
