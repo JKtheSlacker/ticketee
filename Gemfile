@@ -40,3 +40,5 @@ group :test do
   gem 'capybara'
   gem 'factory_girl'
 end
+
+gem 'devise', '1.2.rc'
