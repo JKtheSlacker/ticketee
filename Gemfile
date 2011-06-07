@@ -38,4 +38,5 @@ group :test do
   gem 'cucumber-rails'
   gem 'database_cleaner'
   gem 'capybara'
+  gem 'factory_girl'
 end
